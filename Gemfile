@@ -26,6 +26,7 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'devise', '~> 4.2'
 gem 'paperclip', '~> 5.1'
 gem 'simple_form', '~> 3.4'
+gem 'acts_as_votable', '~> 0.10.0'
 # -----------------------------------
 
 # Use jquery as the JavaScript library
