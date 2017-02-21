@@ -7,6 +7,7 @@ def index
 end
 
 def show
+  @comments = Comment.where(post_id: @post)
 end
 
 def new
