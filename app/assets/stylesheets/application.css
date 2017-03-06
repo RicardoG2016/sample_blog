@@ -23,8 +23,9 @@ header{
   /*background-color: #eeeeee;*/
   position: relative;
   padding: 10px;
+  padding-bottom: 0px;
   width: 100%;
-  box-shadow: 2px 2px 5px #c4c5c6;
+  /*box-shadow: 2px 2px 5px #c4c5c6;*/
 }
 
 nav{
@@ -63,6 +64,12 @@ a:hover{
   background-size: cover;
   background-image: url("vrs.jpg");
   background-position: center center; 
+}
+
+h1.intro-text{
+  padding: 50px;
+  color: white;
+  font-size: 100px;
 }
 
 /*.intro img{
