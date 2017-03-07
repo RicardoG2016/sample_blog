@@ -19,8 +19,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 header{
-  height: 30px;
-  /*background-color: #eeeeee;*/
+  height: 20px;
   position: relative;
   padding: 10px;
   padding-bottom: 0px;
@@ -58,22 +57,29 @@ a:hover{
 }
 
 .intro{
+  position: relative;
   height: 800px;
   width: 100%;
-  text-align: center;
   background-size: cover;
-  background-image: url("vrs.jpg");
+  background-image: url("cb.jpg");
   background-position: center center; 
+  /*opacity: .9;*/
 }
 
-h1.intro-text{
-  padding: 50px;
-  color: white;
-  font-size: 100px;
+.intro-text{
+  position: absolute;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+  /*padding: 40px;*/
+  /*margin: auto center;*/
+  text-shadow: 5px 5px 5px #000000;
+  top: 25%;
+  color: #ffffff;
+  text-shadow: 1px;
+  font-size: 80px;
+  font-weight: bold;
+
 }
 
-/*.intro img{
-  padding: 10px;
-  display: inline-block;
-}*/
 
