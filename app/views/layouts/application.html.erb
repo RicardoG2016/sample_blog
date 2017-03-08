@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WE ARE VR</title>
+    <title>Daily Coffee Atx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   </head>
+  
+<nav>
+  <%= link_to (image_tag "logo.png"), root_path, :class=> "logo" %>
+  <ul>
+    <% if user_signed_in? %>
+      <li><%=  link_to current_user.name, edit_user_registration_path%></li>
+      <!-- <%= link_to "New Post", new_post_path, :class=> "button" %>   -->
+    <% else %>
+      <li><%= link_to "Sign In", new_user_session_path %></li>
+      <li><%= link_to "Sign Up", new_user_registration_path, :class=> "button" %></li>
+    <% end %>
+    <li><a><span> | </span></a></li>
+    <li><%= link_to "Blog", root_path %></li>
+    <li><%= link_to "Learn", root_path %></li>
+    <li><%= link_to "Find", root_path %></li>
+    <li><%= link_to "About", root_path %></li>
 
-<div class="header-style">
-  <header>
-    <%= link_to "Daily Coffee Atx", root_path %>
-    <nav>
-      <% if user_signed_in? %>
-        <%=  link_to current_user.name, edit_user_registration_path%>
-        <%= link_to "Add New Post", new_post_path, :class=> "button" %>  
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path %>
-        <%= link_to "Sign Up", new_user_registration_path, :class=> "button" %>
-      <% end %>
-    </nav>
-  </header>
+  </ul>
+</nav>
   
-</div>
-  
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <!-- <div class="content"> -->
-      <%= yield %>  
-    <!-- </div> -->
-  </body>
+<body>
+<video poster="fail" autoplay="true" loop>
+  <source src="coffee_into.mp4" type="video/mp4">
+  <source src="coffee_into.webm" type="video/webm">
+</video>
+  <!-- <div class="content"> -->
+    <%= yield %>  
+  <!-- </div> -->
+</body>
 
 </html>

@@ -13,29 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
 *{
 color: #263238;
 font-family: 'Roboto', sans-serif;
 }
 
-header{
-  height: 20px;
-  position: relative;
-  padding: 10px;
-  padding-bottom: 0px;
-  width: 100%;
-  /*box-shadow: 2px 2px 5px #c4c5c6;*/
-}
-
 nav{
-  position: absolute;
-  margin-top: -15px;
-  margin-left: 70%;
+  margin: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 40px;
+  position: relative;
 }
 
-nav a, header a{
-  padding: 5px;
-  font-weight: bold;
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  /*overflow: hidden;*/
+}
+
+li{
+  float: right;
+  text-align: center;
+  height: 30px;
+}
+
+nav li a{
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 8px;
+  display: block;
+  padding-left: 30px;
+  /*font-weight: bolder;*/
+  color: #555;
+  text-decoration: none;
 }
 
 .content{
@@ -47,27 +61,31 @@ a {
 }
 
 a:hover{
-  font-size: 17px;
-  color: green;
-  font-weight: bold;
+  color: navy;
+  font-weight: bolder;
 }
 
 .posts {
   
 }
 
-.intro{
+/*.intro{
   position: relative;
   height: 800px;
   width: 100%;
   background-size: cover;
   background-image: url("cb.jpg");
   background-position: center center; 
-  /*opacity: .9;*/
-}
+  opacity: .9;
+}*/
+
+
+
 
 .intro-text{
   position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 3px;
   text-align: center;
   left: 0px;
   right: 0px;
@@ -75,11 +93,18 @@ a:hover{
   /*margin: auto center;*/
   text-shadow: 5px 5px 5px #000000;
   top: 25%;
-  color: #ffffff;
+  color: #fcfbea;
   text-shadow: 1px;
   font-size: 80px;
-  font-weight: bold;
-
+  /*font-weight: bold;*/
 }
 
+.logo > img{
+  max-width: 40px;
+  max-height: 40px;
+}
 
+a.logo{
+  position: absolute;
+  margin-left: 0%;
+}
