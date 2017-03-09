@@ -20,11 +20,12 @@ font-family: 'Roboto', sans-serif;
 }
 
 nav{
-  margin: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 40px;
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 45px;
   position: relative;
+  box-shadow: 0px 3px 10px #888888;
 }
 
 ul{
@@ -40,14 +41,14 @@ li{
   height: 30px;
 }
 
-nav li a{
+nav li a, .logo{
   font-family: 'Poiret One', cursive;
   letter-spacing: 2px;
   font-size: 20px;
   margin-top: 8px;
   display: block;
   padding-left: 30px;
-  /*font-weight: bolder;*/
+  font-weight: 900;
   color: #555;
   text-decoration: none;
 }
@@ -62,41 +63,35 @@ a {
 
 a:hover{
   color: navy;
-  font-weight: bolder;
 }
 
 .posts {
   
 }
 
-/*.intro{
+.intro{
   position: relative;
   height: 800px;
   width: 100%;
   background-size: cover;
-  background-image: url("cb.jpg");
-  background-position: center center; 
-  opacity: .9;
-}*/
-
-
-
+  background-image: url("ch.jpeg");
+  background-position: center center;
+}
 
 .intro-text{
   position: absolute;
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 3px;
-  text-align: center;
-  left: 0px;
+  left: 3%;
   right: 0px;
-  /*padding: 40px;*/
-  /*margin: auto center;*/
-  text-shadow: 5px 5px 5px #000000;
-  top: 25%;
-  color: #fcfbea;
+  text-shadow: 2px 2px 2px #6d6d6d;
+  top: 30%;
+  width: 37%;
+}
+
+.intro-text > span{
   text-shadow: 1px;
-  font-size: 80px;
-  /*font-weight: bold;*/
+  color: white;
 }
 
 .logo > img{
@@ -108,3 +103,39 @@ a.logo{
   position: absolute;
   margin-left: 0%;
 }
+
+.intro1{
+  font-size: 38px;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+
+p.intro2{
+  font-size: 19px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.intro3{
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+}
+
+button.intro-button{
+  font-size: 25px;
+  padding: 10px;
+  width: 170px;
+  border-radius: 10px;
+  background-color: #00a1df;
+  border: none;
+}
+
+button.intro-button > a{
+  color: white;
+}
+
+

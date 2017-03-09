@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Daily Coffee Atx</title>
+    <title>Coffee Hacker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,17 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto" rel="stylesheet">
   </head>
   
 <nav>
-  <%= link_to (image_tag "logo.png"), root_path, :class=> "logo" %>
+  <%= link_to "Coffee Hacker", root_path, :class=> "logo" %>
   <ul>
     <% if user_signed_in? %>
       <li><%=  link_to current_user.name, edit_user_registration_path%></li>
       <!-- <%= link_to "New Post", new_post_path, :class=> "button" %>   -->
     <% else %>
       <li><%= link_to "Sign In", new_user_session_path %></li>
-      <li><%= link_to "Sign Up", new_user_registration_path, :class=> "button" %></li>
     <% end %>
     <li><a><span> | </span></a></li>
     <li><%= link_to "Blog", root_path %></li>
@@ -32,10 +32,10 @@
 </nav>
   
 <body>
-<video poster="fail" autoplay="true" loop>
+<!-- <video poster="fail" autoplay="true" loop>
   <source src="coffee_into.mp4" type="video/mp4">
   <source src="coffee_into.webm" type="video/webm">
-</video>
+</video> -->
   <!-- <div class="content"> -->
     <%= yield %>  
   <!-- </div> -->
