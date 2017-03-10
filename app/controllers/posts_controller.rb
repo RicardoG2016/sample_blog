@@ -2,6 +2,9 @@ class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
   before_action :authenticate_user!, except: [:index, :show]
 
+def home
+end
+
 def index
   @posts = Post.all.order("created_at DESC")
 end

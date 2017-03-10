@@ -1,0 +1,63 @@
+nav{
+  padding: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 45px;
+  position: relative;
+  box-shadow: 0px 3px 10px #888888;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  /*overflow: hidden;*/
+}
+
+li{
+  float: right;
+  text-align: center;
+  height: 30px;
+}
+
+nav li a, .logo{
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 8px;
+  display: block;
+  padding-left: 30px;
+  font-weight: 900;
+  color: #555;
+  text-decoration: none;
+}
+
+.content{
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  color: navy;
+}
+
+li.fa.fa-bars{
+  margin-top: 2px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.logo > img{
+  max-width: 40px;
+  max-height: 40px;
+}
+
+a.logo{
+  position: absolute;
+  margin-left: 0%;
+}
+

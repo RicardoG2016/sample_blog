@@ -1,0 +1,38 @@
+.intro{
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-image: url("ch.jpeg");
+  background-position: center center;
+}
+
+.intro-text{
+  position: absolute;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+  left: 3%;
+  right: 0px;
+  top: 24%;
+  width: 30%;
+}
+
+.intro-text > span{
+  color: white;
+}
+
+.intro1{
+  font-size: 65px;
+  font-weight: bolder;
+  padding-bottom: 5px; 
+}
+
+p.intro2{
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 50;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}

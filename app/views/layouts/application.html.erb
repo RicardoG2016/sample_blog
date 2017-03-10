@@ -7,6 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <script src="https://use.fontawesome.com/4a68c67168.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
@@ -23,19 +24,15 @@
       <li><%= link_to "Sign In", new_user_session_path %></li>
     <% end %>
     <li><a><span> | </span></a></li>
-    <li><%= link_to "Blog", root_path %></li>
+    <li><%= link_to "Blog", posts_path %></li>
     <li><%= link_to "Learn", root_path %></li>
     <li><%= link_to "Find", root_path %></li>
     <li><%= link_to "About", root_path %></li>
-
   </ul>
+  <li class="dropdown fa fa-bars fa-2x" aria-hidden="true"></li>
 </nav>
   
 <body>
-<!-- <video poster="fail" autoplay="true" loop>
-  <source src="coffee_into.mp4" type="video/mp4">
-  <source src="coffee_into.webm" type="video/webm">
-</video> -->
   <!-- <div class="content"> -->
     <%= yield %>  
   <!-- </div> -->
