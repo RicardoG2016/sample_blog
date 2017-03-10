@@ -81,16 +81,14 @@ a:hover{
 .intro-text{
   position: absolute;
   font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   left: 3%;
   right: 0px;
-  text-shadow: 2px 2px 2px #6d6d6d;
   top: 30%;
-  width: 37%;
+  width: 30%;
 }
 
 .intro-text > span{
-  text-shadow: 1px;
   color: white;
 }
 
@@ -105,7 +103,7 @@ a.logo{
 }
 
 .intro1{
-  font-size: 38px;
+  font-size: 45px;
   font-weight: bolder;
   padding-bottom: 5px;
 }
@@ -115,23 +113,23 @@ p.intro2{
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   color: white;
-  font-weight: normal;
-  padding-bottom: 20px;
+  font-weight: 50;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-.intro3{
+/*.intro3{
   font-size: 25px;
   color: white;
   font-weight: bolder;
-}
+}*/
 
 button.intro-button{
   font-size: 25px;
   padding: 10px;
   width: 170px;
-  border-radius: 10px;
-  background-color: #00a1df;
-  border: none;
+  background-color: Transparent;
+  border: 1px solid white;
 }
 
 button.intro-button > a{
