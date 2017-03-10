@@ -24,12 +24,20 @@
       <li><%= link_to "Sign In", new_user_session_path %></li>
     <% end %>
     <li><a><span> | </span></a></li>
-    <li><%= link_to "Blog", posts_path %></li>
-    <li><%= link_to "Learn", root_path %></li>
-    <li><%= link_to "Find", root_path %></li>
-    <li><%= link_to "About", root_path %></li>
+    <li><%= link_to "Blog", "/pages/blog" %></li>
+    <li><%= link_to "Learn", "/pages/learn" %></li>
+    <li><%= link_to "Find", "/pages/find" %></li>
+    <li><%= link_to "About", "/pages/about" %></li>
   </ul>
-  <li class="dropdown fa fa-bars fa-2x" aria-hidden="true"></li>
+
+    <li class="dropbtn fa fa-bars fa-2x" onclick="myFunction()">
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>  
+    </li>
+
 </nav>
   
 <body>

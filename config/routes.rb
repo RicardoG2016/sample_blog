@@ -9,5 +9,11 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  root 'posts#home'
+  get "/pages/:page" => "pages#home"
+  get "/pages/:page" => "pages#about"
+  get "/pages/:page" => "pages#learn"
+  get "/pages/:page" => "pages#blog"
+  get "/pages/:page" => "pages#show"
+
+  root "pages#home", page: "home"
 end
